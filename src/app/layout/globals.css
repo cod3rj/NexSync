@@ -16,10 +16,6 @@
 
 @layer utilities {
   /* TYPOGRAPHY */
-  .h1-large-bold {
-    @apply text-[40px] font-bold leading-[140%] tracking-tighter;
-  }
-
   .h1-bold {
     @apply text-[36px] font-bold leading-[140%] tracking-tighter;
   }

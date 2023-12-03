@@ -37,7 +37,7 @@ const AuthProvider = ({children} : {children: React.ReactNode}) => {
                     name: currentAccount.name,
                     username: currentAccount.name,
                     email: currentAccount.email,
-                    imageUrl: currentAccount.pictures[0],
+                    imageUrl: currentAccount.imageUrl,
                     bio: currentAccount.description,
                 })
 
@@ -56,8 +56,7 @@ const AuthProvider = ({children} : {children: React.ReactNode}) => {
     }
 
     useEffect(() => {
-        // localStorage.getItem('cookieFallback') === null
-        if(
+         if(
             localStorage.getItem('cookieFallback') === '[]'
         ) navigate('/login')
 

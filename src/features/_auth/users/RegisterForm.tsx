@@ -3,7 +3,7 @@ import {useForm} from "react-hook-form";
 import {Button} from "@/components/ui/button"
 import {Form, FormControl, FormField, FormItem, FormLabel, FormMessage,} from "@/components/ui/form"
 import {Input} from "@/components/ui/input"
-import {RegisterValidation} from "@/lib/validation";
+import {LoginValidation, RegisterValidation} from "@/lib/validation";
 import {z} from "zod";
 import Loader from "@/app/layout/Loader.tsx";
 import {Link, useNavigate} from "react-router-dom";
